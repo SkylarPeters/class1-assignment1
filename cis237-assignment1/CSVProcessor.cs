@@ -7,14 +7,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace cis237_assignment1
 {
-    class Program
+    class CSVProcessor
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }

@@ -10,11 +10,8 @@ using System.Threading.Tasks;
 
 namespace cis237_assignment1
 {
-    class Program
+    class UserInterface
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }
