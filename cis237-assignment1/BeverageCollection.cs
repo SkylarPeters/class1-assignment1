@@ -13,5 +13,20 @@ namespace cis237_assignment1
     class BeverageCollection
     {
 
+
+        //*************************
+        // Methods
+        //*************************
+        public void Add()
+        {
+
+        }
+
+        public void Search()
+        {
+
+        }
+
+        public void 
     }
 }
