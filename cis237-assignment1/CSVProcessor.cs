@@ -16,7 +16,7 @@ namespace cis237_assignment1
         //*************************
         // Methods
         //*************************
-        public bool ImportCsv(string pathToCSVFile, [] )
+        public bool ImportCsv(string pathToCSVFile, Beverage[] beverages)
         {
             StreamReader streamReader = null;
 
@@ -30,7 +30,7 @@ namespace cis237_assignment1
 
                 while ((line = streamReader.ReadLine()) != null)
                 {
-                    this.ProcessLine(line, , counter++);
+                    this.ProcessLine(line, beverages, counter++);
                 }
                 return true;
             }
@@ -51,7 +51,7 @@ namespace cis237_assignment1
             }
         }
 
-        private void ProcessLine(string line, , int index)
+        private void ProcessLine(string line, Beverage[] beverages, int index)
         {
             string[] parts = line.Split(',');
 
@@ -61,7 +61,7 @@ namespace cis237_assignment1
             decimal price = decimal.Parse(parts[3]);
             bool active = bool.Parse(parts[4]);
 
-            [index] = new (id, name, pack, price, active);
+            beverages[index] = new Beverage(id, name, pack, price, active);
         }
     }
 }

@@ -14,7 +14,31 @@ namespace cis237_assignment1
     {
         static void Main(string[] args)
         {
+            UserInterface ui = new UserInterface();
+            BeverageCollection bc = new BeverageCollection();
+            CSVProcessor csvp = new CSVProcessor();
 
+            int choice = ui.GetUserInput();
+            
+            switch (choice)
+            {
+                case 1:
+
+                    
+                    break;
+                case 2:
+                    bc.PrintString();
+                    break;
+                case 3:
+                    bc.Search();
+                    break;
+                case 4:
+                    bc.Add();
+                    break;
+                case 5:
+                    break;
+
+            }
         }
     }
 }
