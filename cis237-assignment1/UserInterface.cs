@@ -81,5 +81,10 @@ namespace cis237_assignment1
             Console.WriteLine("Example below:");
             Console.WriteLine("132A7,Example Name,750 ml,25.99,True");
         }
+
+        public void Searching()
+        {
+            Console.WriteLine("Enter beverage ID to search for a specific beverage");
+        }
     }
 }
