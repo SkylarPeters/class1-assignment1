@@ -57,5 +57,19 @@ namespace cis237_assignment1
             Console.WriteLine();
         }
 
+        public void LoadChosen(int load)
+        {
+            if (load == 0)
+            {
+                Console.WriteLine("File has been loaded");
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("The file has already been loaded");
+                Console.WriteLine("Please choose a different option");
+                Console.WriteLine();
+            }
+        }
     }
 }
