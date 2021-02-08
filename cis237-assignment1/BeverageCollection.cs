@@ -16,20 +16,44 @@ namespace cis237_assignment1
 
         Beverage[] beverages = new Beverage[4000];
 
+        UserInterface ui = new UserInterface();
+        CSVProcessor csvp = new CSVProcessor();
+
         //*************************
         // Methods
         //*************************
-        public void Add()
+        public void Add(int arraySpace)
         {
+            try
+            {
+                int i = arraySpace;
+                string input = "";
 
+                ui.Adding();
+                input = Console.ReadLine();
+
+                string[] parts = input.Split(',');
+
+                string id = parts[0];
+                string name = parts[1];
+                string pack = parts[2];
+                decimal price = decimal.Parse(parts[3]);
+                bool active = bool.Parse(parts[4]);
+
+                beverages[i] = new Beverage(id, name, pack, price, active);
+            }
+            catch (Exception e)
+            {
+                ui.PrintErrorMessage();
+                Console.WriteLine(e.ToString());
+                Console.WriteLine();
+            }
         }
 
         public void Search()
         {
 
         }
-
-        UserInterface ui = new UserInterface();
 
         public void PrintString()
         {
@@ -45,8 +69,6 @@ namespace cis237_assignment1
 
             ui.PrintList(outputString);
         }
-
-        CSVProcessor csvp = new CSVProcessor();
 
         public void CSVLoad()
         {

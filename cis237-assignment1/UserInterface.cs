@@ -50,7 +50,7 @@ namespace cis237_assignment1
             Console.WriteLine("5. Exit");
         }
 
-        private void PrintErrorMessage()
+        public void PrintErrorMessage()
         {
             Console.WriteLine("This is not a valid entry");
             Console.WriteLine("Please make a valid choice");
@@ -70,6 +70,16 @@ namespace cis237_assignment1
                 Console.WriteLine("Please choose a different option");
                 Console.WriteLine();
             }
+        }
+
+        public void Adding()
+        {
+            Console.WriteLine("Use the following format to add a beverage");
+            Console.WriteLine();
+            Console.WriteLine("ID,Name,Size,Price,Active");
+            Console.WriteLine();
+            Console.WriteLine("Example below:");
+            Console.WriteLine("132A7,Example Name,750 ml,25.99,True");
         }
     }
 }

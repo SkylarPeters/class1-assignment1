@@ -20,6 +20,7 @@ namespace cis237_assignment1
 
             int choice = ui.GetUserInput();
             int load = 0;
+            int arraySpace = 3943;
             while (choice != 5)
             {
                 switch (choice)
@@ -43,7 +44,8 @@ namespace cis237_assignment1
                         bc.Search();
                         break;
                     case 4:
-                        bc.Add();
+                        bc.Add(arraySpace);
+                        arraySpace++;
                         break;
                     case 5:
                         break;
