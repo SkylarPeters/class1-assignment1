@@ -70,6 +70,7 @@ namespace cis237_assignment1
             this._active = Active;
         }
 
+        // Parameterless Constructor
         public Beverage() { }
     }
 }
