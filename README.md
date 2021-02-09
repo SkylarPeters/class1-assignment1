@@ -2,7 +2,7 @@
 
 ## Author
 
-
+Skylar Peters
 
 ## Description
 
@@ -113,8 +113,9 @@ Suggestion/Hints:
 
 ## Outside Resources Used
 
-
+Used for notes/refreshing memory: http://www.functionx.com/csharp3/Lesson22.htm and https://docs.microsoft.com/en-us/dotnet/csharp/
 
 ## Known Problems, Issues, And/Or Errors in the Program
 
-
+When searching for an ID that does not exist, a Null Reference Exception is thrown.
+The same beverage can be added multiple times.
